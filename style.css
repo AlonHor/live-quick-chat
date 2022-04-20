@@ -1,0 +1,148 @@
+div.scroll {
+  background-color: rgb(41, 41, 41);
+  color: #ffffff;
+  width: 99%;
+  height: 600px;
+  overflow-x: auto;
+  overflow-y: auto;
+  text-align: left;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+  outline-color: #a5a5a5;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+input.send {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  width: 99%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 1%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.chatId {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  width: 70px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  outline-color: #a5a5a5;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+.bck {
+  background-color: rgb(71, 71, 71);
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+* {
+  background-color: rgb(104, 104, 104);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: large;
+  scroll-behavior: smooth;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top-color: rgb(243, 243, 243);
+  border-top-style: solid;
+  border-top-width: 5px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  border-top: 5px solid #555;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: none;
+  position: relative;
+  top: 5px;
+}
+
+.nit {
+  color: #ffffffb6;
+  background-color: rgb(41, 41, 41);
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  text-align: center;
+}
+
+.it {
+  color: white;
+  background-color: rgb(41, 41, 41);
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  text-align: center;
+}
+
+input,
+button {
+  outline-color: #a5a5a5;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+div.scroll::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+div.scroll::-webkit-scrollbar-track {
+  background: rgb(41, 41, 41); /* color of the tracking area */
+}
+
+div.scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(187, 187, 187); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid rgb(41, 41, 41); /* creates padding around scroll thumb */
+}
+
+.btn {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  width: 70px;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 10px;
+  transition: all 0.1s ease;
+  outline-color: #a5a5a5;
+}
+
+.btn:hover {
+  background-color: rgb(77, 77, 77);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  outline-color: rgb(41, 41, 41);
+}

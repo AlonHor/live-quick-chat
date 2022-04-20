@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Live Chat</title>
+  </head>
+  <body>
+    <form action="" id="chat_id_form">
+      <input
+        name="chat_id"
+        id="chat_id"
+        type="text"
+        class="chatId"
+        placeholder="Chat"
+        onkeypress="numberHandler()"
+        autocomplete="off"
+      />
+      <div class="loader" id="loader" hidden></div>
+      <button type="submit" id="select_chat_id" hidden>Login</button>
+    </form>
+    <span id="show_id" class="chatId" hidden></span>
+    <br />
+    <div class="scroll" id="logs"></div>
+    <br />
+    <form action="" id="chat_form" hidden>
+      <input
+        name="message"
+        id="message"
+        placeholder="Message"
+        onkeypress="enterHandler()"
+        autocomplete="off"
+        class="send"
+      />
+      <button type="submit" id="send_button" hidden></button>
+    </form>
+    <div id="user" hidden></div>
+    <script src="index.js"></script>
+  </body>
+</html>
